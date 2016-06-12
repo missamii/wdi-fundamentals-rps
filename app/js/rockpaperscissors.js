@@ -62,6 +62,15 @@ function getWinner(playerMove,computerMove) {
 }
     return winner;
 }
+var check = function(choice){
+if (choice !== "rock" && choice !== "scissors" && choice !== "paper"){
+            userChoice=prompt ("It is invalid. Please choose rock, paper, or scissors.");
+            check(userChoice);
+        }
+};
+check(userChoice);
+
+compare (userChoice, computerChoice);
 
 function playToFive() {
     console.log("Let's play Rock, Paper, Scissors");
