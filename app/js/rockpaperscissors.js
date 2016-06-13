@@ -34,9 +34,9 @@ function getComputerMove(move) {
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
     return var computerChoice = Math.random();
 
-if (computerChoice < 0.34) {
+if (computerChoice < 0.33) {
     computerChoice = "rock";
-} else if (computerChoice > 0.57) {
+} else if (computerChoice > 0.66) {
     computerChoice = "paper";
 } else {
     computerChoice = "scissors";
@@ -84,5 +84,6 @@ function playToFive() {
         computerWins += 1;
         }
     return [playerWins, computerWins];
+    for playToFive(playerWins < 5 && computerWins < 5) {
 }
 
